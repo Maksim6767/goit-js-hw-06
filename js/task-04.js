@@ -5,14 +5,12 @@ const spanEl = document.getElementById('value')
 
 let counterValue = 0;
 
-const decrement = () => {
+downCounter.addEventListener ("click", () => {
     counterValue -= 1;
     spanEl.textContent = counterValue;
-};
-downCounter.addEventListener("click", decrement);
+});
 
-const increment = () => {
+upCounter.addEventListener ("click", () => {
     counterValue += 1;
     spanEl.textContent = counterValue;
-};
-upCounter.addEventListener("click", increment);
+});
