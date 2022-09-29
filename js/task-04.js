@@ -1,7 +1,7 @@
 
-const downCounter = document.querySelector('[data-action="decrement"]')
-const upCounter = document.querySelector('[data-action="increment"]')
-const spanEl = document.getElementById('value')
+const downCounter = document.querySelector('[data-action="decrement"]');
+const upCounter = document.querySelector('[data-action="increment"]');
+const spanEl = document.getElementById('value');
 
 let counterValue = 0;
 
