@@ -9,4 +9,3 @@ onblur.addEventListener("blur", () => {
     onblur.classList.add('valid');
   }
 });
-

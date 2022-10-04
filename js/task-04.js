@@ -14,3 +14,4 @@ upCounter.addEventListener ("click", () => {
     counterValue += 1;
     spanEl.textContent = counterValue;
 });
+
