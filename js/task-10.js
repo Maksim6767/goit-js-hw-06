@@ -1,3 +1,4 @@
+const inputNum = document.querySelector('#controls>input')
 const createEl = document.querySelector('[data-create]');
 const destroyEl = document.querySelector('[data-destroy]');
 const boxes = document.getElementById("boxes");
@@ -20,8 +21,15 @@ function createBoxes(amount) {
     div.style.backgroundColor = getRandomHexColor();
     boxesArr.push(div);
   }
+
   return boxesArr;
 };
+
+createEl.addEventListener('click', () => {
+  let boxesToAdd = createBoxes(inputNum.value);
+  boxes.append(...boxesToAdd);
+})
+console.log(inputNum.value);
 
 destroyEl.addEventListener("click", destroyBoxes => {
   boxes.innerHTML = "";
